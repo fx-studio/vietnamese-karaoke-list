@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A5A25E92223FE9A00CAF9F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A25E82223FE9A00CAF9F6 /* AppDelegate.swift */; };
+		2A5A25EB2223FE9A00CAF9F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5A25EA2223FE9A00CAF9F6 /* ViewController.swift */; };
+		2A5A25EE2223FE9A00CAF9F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5A25EC2223FE9A00CAF9F6 /* Main.storyboard */; };
+		2A5A25F02223FE9B00CAF9F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5A25EF2223FE9B00CAF9F6 /* Assets.xcassets */; };
+		2A5A25F32223FE9B00CAF9F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5A25F12223FE9B00CAF9F6 /* LaunchScreen.storyboard */; };
+		2A5A25FE2223FEE700CAF9F6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5A25FD2223FEE700CAF9F6 /* libsqlite3.tbd */; };
+		2AFC6B9C2224F28A0076F3DA /* karaokevn.db in Resources */ = {isa = PBXBuildFile; fileRef = 2A5A25FB2223FEB700CAF9F6 /* karaokevn.db */; };
+		2AFC6BA02224F70A0076F3DA /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC6B9F2224F70A0076F3DA /* Song.swift */; };
+		2AFC6BA222251A7F0076F3DA /* SQLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC6BA122251A7F0076F3DA /* SQLite.swift */; };
+		2AFC6BA522251EC80076F3DA /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC6BA422251EC80076F3DA /* SQLiteManager.swift */; };
+		2AFC6BA822251FE60076F3DA /* SQLiteSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFC6BA722251FE60076F3DA /* SQLiteSong.swift */; };
+		91256E61731518CE6CC3C154 /* Pods_DemoSQLiteKara.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028D0F4ED4E73880ADF77441 /* Pods_DemoSQLiteKara.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		028D0F4ED4E73880ADF77441 /* Pods_DemoSQLiteKara.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoSQLiteKara.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A40C2D7211C04FA6D3CEBFC /* Pods-DemoSQLiteKara.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSQLiteKara.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DemoSQLiteKara/Pods-DemoSQLiteKara.debug.xcconfig"; sourceTree = "<group>"; };
+		27B7B6CBA0AF4BC476F67FAB /* Pods-DemoSQLiteKara.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoSQLiteKara.release.xcconfig"; path = "Pods/Target Support Files/Pods-DemoSQLiteKara/Pods-DemoSQLiteKara.release.xcconfig"; sourceTree = "<group>"; };
+		2A5A25E52223FE9A00CAF9F6 /* DemoSQLiteKara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoSQLiteKara.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5A25E82223FE9A00CAF9F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2A5A25EA2223FE9A00CAF9F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2A5A25ED2223FE9A00CAF9F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A5A25EF2223FE9B00CAF9F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A5A25F22223FE9B00CAF9F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A5A25F42223FE9B00CAF9F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5A25FB2223FEB700CAF9F6 /* karaokevn.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = karaokevn.db; sourceTree = "<group>"; };
+		2A5A25FD2223FEE700CAF9F6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2AFC6B9F2224F70A0076F3DA /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		2AFC6BA122251A7F0076F3DA /* SQLite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLite.swift; sourceTree = "<group>"; };
+		2AFC6BA422251EC80076F3DA /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
+		2AFC6BA722251FE60076F3DA /* SQLiteSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteSong.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A5A25E22223FE9A00CAF9F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5A25FE2223FEE700CAF9F6 /* libsqlite3.tbd in Frameworks */,
+				91256E61731518CE6CC3C154 /* Pods_DemoSQLiteKara.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A5A25DC2223FE9A00CAF9F6 = {
+			isa = PBXGroup;
+			children = (
+				2A5A25E72223FE9A00CAF9F6 /* DemoSQLiteKara */,
+				2A5A25E62223FE9A00CAF9F6 /* Products */,
+				2A5A25FC2223FEE700CAF9F6 /* Frameworks */,
+				52255B814BF1B6E61EC7B492 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		2A5A25E62223FE9A00CAF9F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A5A25E52223FE9A00CAF9F6 /* DemoSQLiteKara.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A5A25E72223FE9A00CAF9F6 /* DemoSQLiteKara */ = {
+			isa = PBXGroup;
+			children = (
+				2AFC6BAB22252BAB0076F3DA /* AppDeletgate */,
+				2A5A25FA2223FEA300CAF9F6 /* SQLite */,
+				2AFC6BAC22252BB90076F3DA /* Controllers */,
+				2AFC6BAD22252BD50076F3DA /* StoryBoard */,
+				2AFC6BAE22252BEF0076F3DA /* Resources */,
+				2A5A25F42223FE9B00CAF9F6 /* Info.plist */,
+			);
+			path = DemoSQLiteKara;
+			sourceTree = "<group>";
+		};
+		2A5A25FA2223FEA300CAF9F6 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				2AFC6BA322251BD40076F3DA /* DB */,
+				2AFC6BAA222520660076F3DA /* Core */,
+				2AFC6BA9222520590076F3DA /* Schema */,
+				2AFC6BA722251FE60076F3DA /* SQLiteSong.swift */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+		2A5A25FC2223FEE700CAF9F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A5A25FD2223FEE700CAF9F6 /* libsqlite3.tbd */,
+				028D0F4ED4E73880ADF77441 /* Pods_DemoSQLiteKara.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2AFC6BA322251BD40076F3DA /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				2A5A25FB2223FEB700CAF9F6 /* karaokevn.db */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		2AFC6BA9222520590076F3DA /* Schema */ = {
+			isa = PBXGroup;
+			children = (
+				2AFC6B9F2224F70A0076F3DA /* Song.swift */,
+			);
+			path = Schema;
+			sourceTree = "<group>";
+		};
+		2AFC6BAA222520660076F3DA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2AFC6BA122251A7F0076F3DA /* SQLite.swift */,
+				2AFC6BA422251EC80076F3DA /* SQLiteManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2AFC6BAB22252BAB0076F3DA /* AppDeletgate */ = {
+			isa = PBXGroup;
+			children = (
+				2A5A25E82223FE9A00CAF9F6 /* AppDelegate.swift */,
+			);
+			path = AppDeletgate;
+			sourceTree = "<group>";
+		};
+		2AFC6BAC22252BB90076F3DA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2A5A25EA2223FE9A00CAF9F6 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2AFC6BAD22252BD50076F3DA /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				2A5A25EC2223FE9A00CAF9F6 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		2AFC6BAE22252BEF0076F3DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A5A25EF2223FE9B00CAF9F6 /* Assets.xcassets */,
+				2A5A25F12223FE9B00CAF9F6 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		52255B814BF1B6E61EC7B492 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A40C2D7211C04FA6D3CEBFC /* Pods-DemoSQLiteKara.debug.xcconfig */,
+				27B7B6CBA0AF4BC476F67FAB /* Pods-DemoSQLiteKara.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A5A25E42223FE9A00CAF9F6 /* DemoSQLiteKara */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5A25F72223FE9B00CAF9F6 /* Build configuration list for PBXNativeTarget "DemoSQLiteKara" */;
+			buildPhases = (
+				EE6F30624C7A6B52E65F783F /* [CP] Check Pods Manifest.lock */,
+				2A5A25E12223FE9A00CAF9F6 /* Sources */,
+				2A5A25E22223FE9A00CAF9F6 /* Frameworks */,
+				2A5A25E32223FE9A00CAF9F6 /* Resources */,
+				36BC27CC58CA6940494F1592 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DemoSQLiteKara;
+			productName = DemoSQLiteKara;
+			productReference = 2A5A25E52223FE9A00CAF9F6 /* DemoSQLiteKara.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A5A25DD2223FE9A00CAF9F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Tien Le P.";
+				TargetAttributes = {
+					2A5A25E42223FE9A00CAF9F6 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 2A5A25E02223FE9A00CAF9F6 /* Build configuration list for PBXProject "DemoSQLiteKara" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A5A25DC2223FE9A00CAF9F6;
+			productRefGroup = 2A5A25E62223FE9A00CAF9F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A5A25E42223FE9A00CAF9F6 /* DemoSQLiteKara */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A5A25E32223FE9A00CAF9F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AFC6B9C2224F28A0076F3DA /* karaokevn.db in Resources */,
+				2A5A25F32223FE9B00CAF9F6 /* LaunchScreen.storyboard in Resources */,
+				2A5A25F02223FE9B00CAF9F6 /* Assets.xcassets in Resources */,
+				2A5A25EE2223FE9A00CAF9F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36BC27CC58CA6940494F1592 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DemoSQLiteKara/Pods-DemoSQLiteKara-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DemoSQLiteKara/Pods-DemoSQLiteKara-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE6F30624C7A6B52E65F783F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoSQLiteKara-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A5A25E12223FE9A00CAF9F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AFC6BA02224F70A0076F3DA /* Song.swift in Sources */,
+				2A5A25EB2223FE9A00CAF9F6 /* ViewController.swift in Sources */,
+				2AFC6BA522251EC80076F3DA /* SQLiteManager.swift in Sources */,
+				2AFC6BA222251A7F0076F3DA /* SQLite.swift in Sources */,
+				2AFC6BA822251FE60076F3DA /* SQLiteSong.swift in Sources */,
+				2A5A25E92223FE9A00CAF9F6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2A5A25EC2223FE9A00CAF9F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A5A25ED2223FE9A00CAF9F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A5A25F12223FE9B00CAF9F6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A5A25F22223FE9B00CAF9F6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A5A25F52223FE9B00CAF9F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2A5A25F62223FE9B00CAF9F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A5A25F82223FE9B00CAF9F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A40C2D7211C04FA6D3CEBFC /* Pods-DemoSQLiteKara.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QG598U658S;
+				INFOPLIST_FILE = DemoSQLiteKara/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fx.DemoSQLiteKara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2A5A25F92223FE9B00CAF9F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27B7B6CBA0AF4BC476F67FAB /* Pods-DemoSQLiteKara.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QG598U658S;
+				INFOPLIST_FILE = DemoSQLiteKara/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fx.DemoSQLiteKara;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A5A25E02223FE9A00CAF9F6 /* Build configuration list for PBXProject "DemoSQLiteKara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5A25F52223FE9B00CAF9F6 /* Debug */,
+				2A5A25F62223FE9B00CAF9F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A5A25F72223FE9B00CAF9F6 /* Build configuration list for PBXNativeTarget "DemoSQLiteKara" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5A25F82223FE9B00CAF9F6 /* Debug */,
+				2A5A25F92223FE9B00CAF9F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A5A25DD2223FE9A00CAF9F6 /* Project object */;
+}
